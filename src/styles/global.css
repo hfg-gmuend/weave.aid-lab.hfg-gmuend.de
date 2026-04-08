@@ -1,0 +1,145 @@
+:root {
+  /* ── Farben ── */
+  --color-bg: #0e0e13;
+  --color-surface: #212126;
+  --color-surface-active: #353539;
+  --color-border: #302e33;
+  --color-text: #ffffff;
+  --color-text-secondary: rgba(255, 255, 255, 0.64);
+  --color-text-disabled: rgba(255, 255, 255, 0.38);
+  --color-accent: #f7ffa8;
+  --color-accent-text: #0e0e13;
+  --color-input-border: rgba(255, 255, 255, 0.08);
+  --color-sidebar-border: rgba(255, 255, 255, 0.12);
+  --color-hover: rgba(221, 221, 255, 0.13);
+  --color-card-gradient-from: rgba(14, 14, 19, 0);
+  --color-card-gradient-to: #0e0e13;
+
+  /* ── Typografie ── */
+  --font-family: 'DM Sans Variable', sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --line-height-normal: normal;
+  --line-height-tight: 16.8px;
+  --line-height-relaxed: 21px;
+
+  /* ── Spacing ── */
+  --spacing-xxxs: 2px;
+  --spacing-xxs: 4px;
+  --spacing-xs: 8px;
+  --spacing-s: 16px;
+  --spacing-m: 32px;
+  --spacing-l: 64px;
+
+  /* ── Border Radius ── */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-avatar: 12px;
+
+  /* ── Gallery-Erweiterungen ── */
+  --color-accent-dim: rgba(247, 255, 168, 0.15);
+  --color-accent-hover: #e8f08a;
+  --color-youtube: #ff0000;
+  --color-youtube-hover: #cc0000;
+  --color-card: #212126;
+  --color-card-alt: #353539;
+
+  /* ── Sidebar ── */
+  --sidebar-width: 240px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: var(--font-weight-regular);
+  color: var(--color-text);
+  background: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+}
+
+body {
+  min-height: 100vh;
+  overflow: hidden;
+  background: var(--color-bg);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+  background: none;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* ── Scrollbar Styling ── */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.24);
+}
+
+/* ── Stagger Animation ── */
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
