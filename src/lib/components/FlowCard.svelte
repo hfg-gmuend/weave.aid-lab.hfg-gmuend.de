@@ -229,6 +229,7 @@
   .card-body {
     display: flex;
     flex-direction: column;
+    flex: 1;
     gap: 14px;
     padding: 20px 20px 18px;
   }
@@ -256,10 +257,13 @@
     line-height: 1.5;
     letter-spacing: -0.01em;
     color: var(--color-text);
+    text-wrap: balance;
+    text-wrap: pretty;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    min-height: 3em;
   }
 
   /* ── Tabs ── */
@@ -298,6 +302,7 @@
     align-items: center;
     gap: var(--spacing-xs);
     padding-top: 2px;
+    margin-top: auto;
   }
 
   .btn {
